@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!--ABAIXO DE 18.4: ABAIXO DO PESO
+ENTRE 18.5 E 25: PESO IDEAL
+ENTRE 26.1 E 30: SOBREPESO
+ENTRE 30.1 E 40: OBESIDADE
+ACIMA DE 40: OBESIDADE MÓRBIDA -->
+        <header>
+    
+            <h1>Calculadora de IMC</h1> <!--IMC = peso / (altura x altura)-->
+            <h2></h2>
+        </header>
+        <article>
+            <h2>O que é IMC?</h2>
+            <p>IMC é a sigla para Índice de Massa Corporal,que é um cálculo que serve para avaliar se a pessoa está dentro do seu peso ideal em relação à altura. Assim, de acordo com o valor do resultado de IMC, a pessoa pode saber se está dentro do peso ideal, acima ou abaixo do peso desejado.</p>
+            <p>Estar dentro do peso certo é importante porque estar acima ou abaixo desse peso pode influenciar bastante a saúde, aumentando o risco de doenças como desnutrição quando se está abaixo do peso, e AVC ou infarto, quando se está acima do peso. Assim, é comum os médicos, enfermeiros e nutricionistas avaliem o IMC das pessoas nas consultas de rotina para verificar a possibilidade de doenças que a pessoa pode estar pre-disposta.</p>
+            <h2>Como calcular o IMC</h2>
+            <p>Você pode saber se está dentro do peso ideal utilizando a nossa <a href="#calc" target="_blank">Calculadora online</a>, apenas inserindo seus dados.<br>
+            O cálculo do IMC deve ser feito usando a seguinte fórmula matemática:</p> <br> 
+                <div class="formula">IMC = Peso / (altura x altura)</div> 
+            <p>O peso deve estar em kg e a altura em metros: <br><em> Altura: 1.70 mt <br> Peso: 60 kg</em><br>
+                O resultado é dado em kg/m2. Depois de obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indicar:</p>
+                <ul>
+                    <li><strong>Magreza</strong>, quando o resultado é menor que 18,5 kg/m2;</li>
+                    <li><strong>Normal</strong>, quando o resultado está entre 18,5 e 24,9 kg/m2;</li>
+                    <li><strong>Sobrepeso</strong>, quando o resultado está entre 24,9 e 30 kg/m2;</li>
+                    <li><strong>Obesidade</strong>, quando o resultado é maior que 30 kg/m2.</li>
+                </ul>
+            <p>Assim, de acordo com o resultado do IMC é possível também saber se existe algum risco de desenvolver doenças. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior é o risco da pessoa ter doenças como pressão alta, diabetes e doenças cardíacas</p>
+            <h3>Por que é importante saber o IMC?</h3>
+            <p>Saber o IMC é importante para verificar se o peso está de acordo com a altura da pessoa, além de ser importante para saber se existe risco de desenvolver alguma doença. No caso das crianças, o IMC é importante para saber se o desenvolvimento está de acordo com o esperado.</p>
+            <p>Além disso, sabendo o IMC, é possível também verificar qual o peso ideal e, assim, saber se a pessoa está acima ou abaixo do peso recomendado para a sua altura. Veja como é feito o cálculo do peso ideal.</p>
+            <h3>O IMC é a melhor forma de avaliar o peso?</h3>
+            <p>Apesar do IMC ser considerado fundamental para saber o estado nutricional da pessoa, é uma ferramenta que não leva em consideração muitos outros fatores que são importantes para avaliar o peso de uma pessoa. </p>
+            <p>Assim, embora seja uma boa ferramenta rápida para perceber se o peso está ou não adequado, não é a melhor forma de avaliar o peso. Para isso, o ideal é consultar um médico ou nutricionista para avaliar outros fatores como a idade, nível de atividade física, composição corporal, nível de hidratação e histórico de saúde, por exemplo.</p>
+
+
+            
+                
+            
+            <section class="calculo">
+                <h2 id="calc">Cálculo IMC</h2>
+                <p>Altura: <input type="number" name="altura" id="altura"> mt</p> 
+            
+                <p class="peso">Peso: <input type="number" name="peso" id="peso"> kg</p>
+            
+                <input type="button" value="Resultado" onclick="calculo()" id="button">
+                <div id="res"></div>
+            
+                
+            </section>
+            <div>
+                <h2>Resultado do seu IMC</h2>
+                <p  id="resultado"></p>
+            </div>
+        </article>
+        
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="imc.js"></script>
+</body>
+</html>

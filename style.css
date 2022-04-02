@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'kgr';
+    src: url('fonts/KGRedHands.ttf') format('truetype');
+}
+
+@font-face {
+    
+    font-family: 'Louis';
+    src: url('fonts/LouisGeorgeCafe.ttf') format('truetype');
+}
+
+:root {
+    --cor00: #dbf9fa;
+    --cor01: #a6e1ff;
+    --cor02: #ff73f1;
+    --cor03: #ff00e6;
+    --cor04: #1d1d1d;
+    --cor05: #113873;
+    
+    --font01: 'Kgr';
+    --font_padrao: 'Louis';
+    
+}
+
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor00));
+}
+
+main {
+    min-width: 300px;
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: var(--cor00);
+
+}
+
+h1 {
+    font-family: var(--font01);
+    font-weight: normal;
+    max-width: 600px;
+    font-size: 48px;
+    color: var(--cor04);
+}
+
+article h2 {
+    font-family: var(--font01);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    color: var(--cor04);
+}
+
+article p {
+    text-indent: 30px;
+    line-height: 1.7em;
+
+}
+
+h3 {
+    font-family: var(--font_padrao);
+}
+
+ul {
+    font-family: var(--font_padrao);
+    font-size: 18px;
+    line-height: 30px;
+    border-style: solid;
+    margin: auto;
+    text-align: justify;
+    
+}
+
+
+section.calculo {
+    font-family: var(--font01);
+    font-weight: normal;
+    background-image: repeating-linear-gradient(to bottom, var(--cor01), transparent);
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 0px 30px 5px;
+    
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+
+section p {
+    font-weight: bold;
+    
+    
+}
+
+#altura {
+    font-family: var(--font_padrao);
+    font-size: 15px;
+    font-weight: bold;
+    width: 79px;
+    height: 20px;
+    
+
+}
+
+
+
+#peso {
+    font-family: var(--font_padrao);
+    font-size: 15px;
+    font-weight: bold;
+    width: 80px;
+    height: 20px;
+    margin-left: 8px;
+    
+    
+
+}
+
+section div {
+    margin-top: 20px;
+}
+
+#button {
+    font-family: var(--font_padrao);
+    background-color: var(--cor04);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+section strong {
+    
+    color: var(--cor05);
+}
+
+
+
+p {
+    font-family: var(--font_padrao);
+}
+
+
+
+.resultado {
+    font-weight: bold;
+    color: red;
+}
+
+.formula {
+    font-family: var(--font_padrao);
+    display: inline;
+    background-color: var(--cor01);
+    margin: 250px;
+    
+}
